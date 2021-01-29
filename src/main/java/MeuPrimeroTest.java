@@ -1,6 +1,4 @@
 import org.junit.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Dimension;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class MeuPrimeroTest {
@@ -13,13 +11,10 @@ public class MeuPrimeroTest {
         ChromeDriver driver = new ChromeDriver();
         //Maximar Tela
         driver.manage().window().maximize();
-
         //Captura a url e abre o navegador
         driver.get("http://www.google.com.br");
-
         //Realiza a validação pelo título da página
         Assert.assertEquals("Google", driver.getTitle());
-
         //Fecha o navegador
         driver.quit();
     }
